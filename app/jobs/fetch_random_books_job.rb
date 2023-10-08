@@ -3,8 +3,8 @@ require 'rest-client'
 class FetchRandomBooksJob < ApplicationJob
   queue_as :default
 
-  API_URL = 'https://www.googleapis.com/books/v1/volumes'
-  API_KEY = 'AIzaSyCsA4qTQ_ihhcJtTm_Iwfw-PguZB7rdtI0' # Replace with your actual API key
+  API_URL = 'https://www.googleas.com/books/v1/volumes'
+  API_KEY = '' # Replace with your actual API key
 
   def perform
     books_data = get_random_books
